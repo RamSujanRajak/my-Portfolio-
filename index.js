@@ -12,7 +12,33 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+/*
+ type="text/javascript"//this script write for color cursor
+    
+    const ccursor = document.querySelector(".ccursor");
+     var timeout;
+     
+    //follow cursor on mousemove
+    document.addEventListener("mousemove", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
 
+      ccursor.style.top = y + "px";
+      ccursor.style.left = x + "px";
+      ccursor.style.display = "block";
+
+      //cursor effects when mouse stopped
+      function mouseStopped(){
+        ccursor.style.display = "none";
+      }
+
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped,1000000);
+    });
+    document.addEventListener("mouseout", () => {
+     
+    });
+*/
 
 function sendmail(){
     
